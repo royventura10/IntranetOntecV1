@@ -29,7 +29,7 @@ public class cUsuario {
 
     @Autowired
     private isEstado isEstado;
-     @GetMapping("/")
+     @GetMapping("/login")
     public String inicio(Model model) {
         return "login";
     }
