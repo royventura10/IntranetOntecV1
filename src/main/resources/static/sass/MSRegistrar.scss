@@ -1,0 +1,24 @@
+.gray-bg{
+    .middle-box{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .MBConte{
+            height: 50%;
+            .MBConteLogo{
+                .logoontec{
+                    width: 250px;
+                    height: 60px;
+                    margin-bottom: 1em;
+                }
+            }
+            .m-t{
+                .btn-primary{
+                    background-color: #3877FF;
+                    border-color: #3877FF;
+                }
+            }
+        }
+    }
+}

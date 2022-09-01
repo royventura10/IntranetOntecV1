@@ -1,0 +1,33 @@
+.gray-bg{
+    .middle-box{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ConteMiddle{
+            height: 50%;
+            .CM-logo{
+                .logoontec{
+                    width: 250px;
+                    height: 60px;
+                    margin-bottom: 1em;
+                }  
+            }
+            .m-t{
+                .form-group{
+                    .form-control{
+                        &:focus{
+                            border-color: #3877FF;    
+                        }    
+                    }
+                }
+                .btn-primary{
+                    background-color: #3877FF;
+                    border-color: #3877FF;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+    <head>
+        <title>Iniciar Sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+     
+    </head>
+    <body>
+        
+        <div class="container text-center">
+            <section class="h-100 gradient-form" style="background-color: #eee;">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                  <div class="card rounded-3 text-black">
+                    <div class="row g-0">
+                      <div class="col-lg-6">
+                        <div class="card-body p-md-5 mx-md-4">
+
+                          <div class="text-center">
+                            <img src="../fotos/logo.jpg"
+                              style="width: 185px;" alt="logo">
+                            <h4 class="mt-1 mb-5 pb-1">Somos el equipo Ontec</h4>
+                          </div>
+
+                          <form action="controladorP">
+                            <p>Por favor, inicia sesión con tu cuenta</p>
+                            <div>
+                            <div class="form-outline mb-4">
+                              <input name="nomusu" type="text" class="form-control"id="claveusu"
+                                placeholder="Escribe tu nombre de usuario"  required  />
+                              <label class="form-label" for="form2Example11">Username</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                              <input name="claveusu" type="password" id="claveusu" class="form-control" required />
+                              <label class="form-label" for="form2Example22">Password</label>
+                            </div>
+                            </div>
+                            
+                            
+                            <div class="text-center pt-1 mb-5 pb-1">
+                              <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="guardar">Iniciar Sesión</button>
+                              
+                            </div>
+
+                            
+
+                          </form>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-flex align-items-center gradient-custom-2 bg-dark">
+                        <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                          <h4 class="mb-4">Somos más que solo una compañia</h4>
+                          <p class="small fst-italic mb-0">ONTEC S.A.C. es una empresa importadora de dispositivos tecnológicos 
+                              de almacenamiento, de capital nacional y extranjero especializada en la comercialización
+                              y distribución al por mayor, trabajamos con marcas exclusivas (Kingston y SanDisk).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+        </div>
+        
+        
+    </body>
+</html>
