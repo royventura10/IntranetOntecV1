@@ -1,75 +1,115 @@
 <!DOCTYPE html>
 <html xmlns:th="thymeleaf.org">
-    <head>
-        <title>Iniciar Sesión</title>
+    <!--<head>
+        <title>Grupo Ontec</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-     
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>-->
+    <head th:replace="layout/dashboard :: dashboard-head">
+        <title>GRUPO ONTEC | Login</title>
     </head>
-    <body>
-        
+
+
+
+    <!--<body>
         <div class="container text-center">
             <section class="h-100 gradient-form" style="background-color: #eee;">
-            <div class="container py-5 h-100">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                  <div class="card rounded-3 text-black">
-                    <div class="row g-0">
-                      <div class="col-lg-6">
-                        <div class="card-body p-md-5 mx-md-4">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-xl-10">
+                            <div class="card rounded-3 text-black">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <div class="card-body p-md-5 mx-md-4">
+                                            <div class="text-center">
+                                                <img src="../fotos/logo.jpg"
+                                                     style="width: 185px;" alt="logo">
+                                                <h4 class="mt-1 mb-5 pb-1">Somos el equipo Ontec</h4>
+                                            </div>
 
-                          <div class="text-center">
-                            <img src="../fotos/logo.jpg"
-                              style="width: 185px;" alt="logo">
-                            <h4 class="mt-1 mb-5 pb-1">Somos el equipo Ontec</h4>
-                          </div>
+                                            <form action="controladorP">
+                                                <p>Por favor, inicia sesión con tu cuenta</p>
+                                                <div>
+                                                    <div class="form-outline mb-4">
+                                                        <input name="nomusu" type="text" class="form-control" id="claveusu"
+                                                               placeholder="Usuario"  required />
+                                                            <label class="form-label" for="form2Example11">Username</label>
+                                                    </div>
 
-                          <form action="controladorP">
-                            <p>Por favor, inicia sesión con tu cuenta</p>
-                            <div>
-                            <div class="form-outline mb-4">
-                              <input name="nomusu" type="text" class="form-control"id="claveusu"/>
-                                placeholder="Escribe tu nombre de usuario"  required  />
-                              <label class="form-label" for="form2Example11">Username</label>
-                            </div>
+                                                    <div class="form-outline mb-4">
+                                                        <input name="claveusu" type="password" id="claveusu" class="form-control" placeholder="Contraseña" required />
+    <!--<label class="form-label" for="form2Example22">Password</label>
+</div>
+</div>
 
-                            <div class="form-outline mb-4">
-                              <input name="claveusu" type="password" id="claveusu" class="form-control" required />
-                              <label class="form-label" for="form2Example22">Password</label>
-                            </div>
-                            </div>
-                            
-                            
-                            <div class="text-center pt-1 mb-5 pb-1">
-                              <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="guardar">Iniciar Sesión</button>
-                              
-                            </div>
 
-                            
+<div class="text-center pt-1 mb-5 pb-1">
+<button class="btn btn-primary btn-block fa-lg gradient-custom-w2 mb-3" type="guardar">Iniciar Sesión</button>
 
-                          </form>
+</div>
 
-                        </div>
-                      </div>
-                      <div class="col-lg-6 d-flex align-items-center gradient-custom-2 bg-dark">
-                        <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                          <h4 class="mb-4">Somos más que solo una compañia</h4>
-                          <p class="small fst-italic mb-0">ONTEC S.A.C. es una empresa importadora de dispositivos tecnológicos 
-                              de almacenamiento, de capital nacional y extranjero especializada en la comercialización
-                              y distribución al por mayor, trabajamos con marcas exclusivas (Kingston y SanDisk).</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+
+</form>
+
+</div>
+</div>
+<div class="col-lg-6 d-flex align-items-center gradient-custom-2 bg-dark">
+<div class="text-white px-3 py-4 p-md-5 mx-md-4">
+<h4 class="mb-4">Somos más que solo una compañia</h4>
+<p class="small fst-italic mb-0">ONTEC S.A.C. es una empresa importadora de dispositivos tecnológicos 
+de almacenamiento, de capital nacional y extranjero especializada en la comercialización
+y distribución al por mayor, trabajamos con marcas exclusivas (Kingston y SanDisk).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</body>-->
+
+
+    <body class="gray-bg" style="background-color: black">
+
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                <div>
+
+                    <!--<h1 class="logo-name">IN+</h1>-->
+                    <img src="../fotos/logo.jpg" style="width: 250px;" alt="logo">
                 </div>
-              </div>
+                <h3 style="color: #fff">Bienvenido a Grupo Ontec</h3>
+                <p style="color: #fff">ONTEC S.A.C. es una empresa importadora de dispositivos tecnológicos 
+                    de almacenamiento, de capital nacional y extranjero especializada en la comercialización
+                    y distribución al por mayor, trabajamos con marcas exclusivas (Kingston y SanDisk).</p>
+                <p style="color: #fff">Por favor inicie sesión</p>
+                <form class="m-t" role="form" action="controladorP">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Usuario" name="nomusu" id="claveusu" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="claveusu" id="claveusu" required="">
+                    </div>
+                    <button class="btn btn-success full-width m-b">Ingresar</button>
+
+                    <a href="#"><small>¿Olvidó su contraseña?</small></a><br>
+                    <!--<p class="text-muted text-center"><small>Do not have an account?</small></p>-->
+                    <a class="btn btn-link" href="register.html" style="color: #fff">Registrarme</a>
+                </form>
+                <p class="m-t" style="color: #fff"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
             </div>
-          </section>
-        
         </div>
-        
-        
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+
     </body>
+
+
 </html>
