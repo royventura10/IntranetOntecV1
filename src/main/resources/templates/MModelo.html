@@ -24,7 +24,7 @@
                 <!--Ruta Marca -->
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
-                        <h2>Gestion de Modelos</h2>
+                        <h2>Gestion de Marcas</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="index.html">Home</a>
@@ -33,7 +33,7 @@
                                 <a>Mantenimiento</a>
                             </li>
                             <li class="breadcrumb-item active">
-                                <strong>Modelos</strong>
+                                <strong>Marcas</strong>
                             </li>
                         </ol>
                     </div>
@@ -51,7 +51,7 @@
                         <div class="col-lg-6">
                             <div class="ibox ">
                                 <div class="ibox-title">
-                                    <h5>Registrar Modelo<small><br>LLenar todos los datos para agregar un nuevo Modelo.</small></h5>
+                                    <h5>Registrar Marca<small><br>LLenar todos los datos para agregar una nueva Marca.</small></h5>
                                     <div class="ibox-tools">
                                         <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="ibox-content">
                                     <form th:action='@{/GuardarModelo}' method="POST">
-                                       <div class="form-group row"><label class="col-sm-2 col-form-label">Modelo:</label>
+                                       <div class="form-group row"><label class="col-sm-2 col-form-label">Marca:</label>
                                            <div class="col-sm-10"><input id="nom_mod" type="text" placeholder="Nombre Modelo" class="form-control" name="nom_mod" required></div>
                                                                                 
                                         <div class="hr-line-dashed"></div>
@@ -89,7 +89,7 @@
                         <div class="col-lg-6">
                             <div class="ibox">
                                 <div class="ibox-title">
-                                    <h5>Modelos Registrados</h5>
+                                    <h5>Marcas Registradas</h5>
 
                                     <div class="ibox-tools">
                                         <a class="collapse-link">
@@ -115,7 +115,7 @@
                                         <thead>
                                             <tr>
                                                 <th data-toggle="true">Codigo</th>
-                                                <th data-toggle="true">Modelo</th>
+                                                <th data-toggle="true">Marca</th>
                                             </tr>
                                         </thead>
 
